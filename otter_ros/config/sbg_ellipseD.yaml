@@ -1,0 +1,124 @@
+/**:
+  ros__parameters:
+    # Configuration file for SBG Ellipse on the Otter USV
+    # Based on SBG example configuration file
+
+    # **This requires a direct serial connection to the SBG Ellipse**
+
+    driver:
+      # Node frequency (Hz)
+      # Note: The frequency should be at least two times higher than the highest
+      #       output frequency.
+      #       The frequency can be reduced in order to reduce CPU consumption but
+      #       it can lead to miss data frame and less accurate time stamping.
+      frequency: 400
+
+    odometry:
+      # Enable ROS odometry messages.
+      enable: true
+      # Publish odometry transforms.
+      publishTf: true
+      # Odometry frame IDs.
+      odomFrameId: "odom"
+      baseFrameId: "base_link"
+      initFrameId: "map"
+
+    # Configuration of the device with ROS.
+    confWithRos: false
+
+    uartConf:
+      # Port Name
+      portName: "/dev/sbg"
+
+      # Baude rate (4800 ,9600 ,19200 ,38400 ,115200 [default],230400 ,460800 ,921600)
+      baudRate: 115200
+
+      # Port Id
+      # 0 PORT_A: Main communication interface. Full duplex.
+      # 1 PORT_B: Auxiliary input interface for RTCM
+      # 2 PORT_C: Auxiliary communication interface. Full duplex.
+      # 3 PORT_D: Auxiliary input interface
+      # 4 PORT_E: Auxiliary input/output interface
+      portID: 4
+
+    ############################### Output configuration ###############################
+    # 0 Output is disabled
+    # 1 Output is generated at 200Hz
+    # 2 Output is generated at 100Hz
+    # 4 Output is generated at 50Hz
+    # 8 Output is generated at 25Hz
+    # 10 Output is generated at 20Hz
+    # 20 Output is generated at 10Hz
+    # 40 Output is generated at 5Hz
+    # 200 Output is generated at 1Hz
+    # 10000 Pulse Per Second. Same mode as above.
+    # 10001 Output sent when a new data is available.
+    # 10002 Output is generated when a new virtual odometer event occurs
+    # 10003 Output is generated on a Sync In A event
+    # 10004 Output is generated on a Sync In B event
+    # 10005 Output is generated on a Sync In C event
+    # 10006 Output is generated on a Sync In D event
+    output:
+      # Time reference:
+      # Note: Set the time reference used to timestamp the header of the published
+      #       messages.
+      #       The header of the ROS standard message sensor_msgs:TimeReference is
+      #       not effected by this parameter and it will be timestamped by the ROS time.
+      #
+      # "ros" : ROS time (default)
+      # "ins_unix" : INS absolute time referenced to UNIX epoch (00:00:00 UTC on 1 January 1970)
+      time_reference: "ros"
+
+      # Ros standard output:
+      # Note: If true publish ROS standard messages.
+      ros_standard: true
+
+      # Frame convention:
+      # Note: If true messages are expressed in the ENU convention.
+      #
+      # true : ENU convention (X east, Y north, Z up)
+      # false (default): NED convention (X north, Y east, Z down)
+      use_enu: false
+
+      # Frame ID:
+      # Note: If the frame convention is NED so the default frame ID is (imu_link_ned)
+      #       else if the convention is ENU so the default frame ID is (imu_link)
+      frame_id: "imu_link_ned"
+
+      # Status general, clock, com aiding, solution, heave
+      log_status: 8
+      # Includes IMU status, acc., gyro, temp delta speeds and delta angles values
+      log_imu_data: 8
+      # Includes roll, pitch, yaw and their accuracies on each axis
+      log_ekf_euler: 8
+      # Includes the 4 quaternions values
+      log_ekf_quat: 8
+      # Position and velocities in NED coordinates with the accuracies on each axis
+      log_ekf_nav: 8
+      # Heave, surge and sway and accelerations on each axis for up to 4 points
+      log_ship_motion: 8
+      # Provides UTC time reference
+      log_utc_time: 8
+      # Magnetic data with associated accelerometer on each axis
+      log_mag: 8
+      # Magnetometer calibration data (raw buffer)
+      log_mag_calib: 0
+      # GPS velocities from primary or secondary GPS receiver
+      log_gps1_vel: 10001
+      # GPS positions from primary or secondary GPS receiver
+      log_gps1_pos: 10001
+      # GPS true heading from dual antenna system
+      log_gps1_hdt: 10001
+      # GPS 1 raw data for post processing.
+      log_gps1_raw: 10001
+      # Provides odometer velocity
+      log_odo_vel: 0
+      # Event A/B/C/D Event markers sent when events are detected on a sync in pin
+      log_event_a: 0
+      log_event_b: 0
+      log_event_c: 0
+      log_event_d: 0
+      # Air data
+      log_air_data: 0
+      # Short IMU data
+      log_imu_short: 0

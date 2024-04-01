@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>otter_control</name>
+  <version>1.0.0</version>
+  <description>
+    <p>This package provides advanced control algorithms for the Otter USV.</p>
+  </description>
+  <maintainer email="15mrc5@queensu.ca">Riley Cooper (Offroad Robotics @ Ingenuity Labs)</maintainer>
+  <maintainer email="thomas.sears@queensu.ca">Thomas Sears (Offroad Robotics @ Ingenuity Labs)</maintainer>
+  <license>MIT license</license>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+
+  <build_depend>otter_msgs</build_depend>
+  <build_depend>otter_ros</build_depend>
+
+  <exec_depend>ros2launch</exec_depend>
+  <exec_depend>otter_msgs</exec_depend>
+  <exec_depend>otter_ros</exec_depend>
+
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

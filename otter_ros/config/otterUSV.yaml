@@ -1,0 +1,16 @@
+/**: #Wildcard applies to all nodes
+  ros__parameters:
+    # Configuration file for the Otter USV
+    # YAML
+
+    otter:
+      # IP addresses on the "Otter radio" network
+      # OBS
+      obs_ip_address: "192.168.53.2"
+      # VCS
+      vcs_ip_address: "192.168.53.200"
+
+      # UDP port for Otter communitcation
+      port: 2009
+
+    frame_id: "base_link"

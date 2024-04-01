@@ -1,0 +1,5 @@
+std_msgs/Header header
+float64 wpt_ctr
+float64 lateral_error
+float64 heading_error
+float64 speed_error
