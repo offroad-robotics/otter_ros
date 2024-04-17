@@ -10,26 +10,34 @@ OtterROS is a suite of ROS 2 packages for the [Maritime Robotics] Otter USV, inc
 
 The Otter ROS package has been developed and tested on [ROS 2] Foxy Fitzroy and Ubuntu 20.04 LTS.
 
-Authors: [Riley Cooper](15mrc5@queensu.ca), [Sabrina Button](sabrina.button@queensu.ca), [Thomas Sears](thomas.sears@queensu.ca), [Joshua Marshall](joshua.marshall@queensu.ca)
-Affiliation: [Offroad Robotics], [Queen's University]
+**Creators**: [Riley Cooper](15mrc5@queensu.ca), [Sabrina Button](sabrina.button@queensu.ca), [Thomas Sears](thomas.sears@queensu.ca), [Joshua Marshall](joshua.marshall@queensu.ca)
+
+**Affiliation**: [Offroad Robotics] is a member of the [Ingenuity Labs Research Institute] at [Queen's University].
 
 **Keywords:** otter usv, maritime robotics, ros2, python, nmea, navigation, control
 
+### Acknowledgements
+
+Development of OtterROS included field tests within the traditional territories of the Anishinabee, Mississauga, Algonquin, Haudenosaunee, and Huron-Wendat.
+
+### Funding
+
+This project was funded in part by the NSERC Canadian Robotics Network (NCRN) under NSERC project NETGP 508451-17, the Vanier Canada Graduate Scholarships program, and Queen’s University’s USSRF program. The Otter USV was purchased with generous support from the Ingenuity Labs Research Institute’s Research Opportunity Seed Fund.
+
 ### Referencing OtterROS
 
-The first public release was accompanied by a paper submission the [Workshop on Field Robotics](https://norlab-ulaval.github.io/workshop_field_robotics_icra2024/) at [ICRA 2024](https://2024.ieee-icra.org/). If you use OtterROS in your research or published works, please use the following citation so we can see what other users are up to!
-
-<!-- ```latex
-@inproceedings{offroad_otter_ros,
-  title={{OtterROS}: Picking and Programming an Uncrewed Surface Vessel for Experimental Field Robotics Research with {ROS 2}},
-  author={Thomas M. C. Sears, M. Riley Cooper, Sabrina R. Button, and Joshua A. Marshall},
-  booktitle={2024 {IEEE} International Conference on Robotics and Automation {(ICRA)}}
-  seriestitle={Workshop on Field Robotics},
-  year={2024},
-}
-``` -->
+The first release was accompanied by a paper accepted at the [Workshop on Field Robotics](https://norlab-ulaval.github.io/workshop_field_robotics_icra2024/) at [ICRA 2024](https://2024.ieee-icra.org/). If you use OtterROS in your research or published works, please use the following citation so we can see what other users are up to!
 
 ```latex
+@inproceedings{sears2024otterros,
+  title     = {{OtterROS}: Picking and Programming an Uncrewed Surface Vessel for Experimental Field Robotics Research with {ROS 2}},
+  author    = {Thomas M. C. Sears, M. Riley Cooper, Sabrina R. Button, and Joshua A. Marshall},
+  booktitle = {2024 {IEEE} International Conference on Robotics and Automation {(ICRA)} Workshop on Field Robotics},
+  year      = {2024}
+}
+```
+
+<!-- ```latex
 @misc{sears2024otterros,
       title={{OtterROS}: Picking and Programming an Uncrewed Surface Vessel for Experimental Field Robotics Research with {ROS} 2}, 
       author={Thomas M. C. Sears and M. Riley Cooper and Sabrina R. Button and Joshua A. Marshall},
@@ -38,24 +46,24 @@ The first public release was accompanied by a paper submission the [Workshop on 
       archivePrefix={arXiv},
       primaryClass={cs.RO}
 }
-```
+``` -->
 
 ## Package Directory
 
 ### `otter_ros`
 This is the main package of OtterROS. It establishes the interface between the back seat driver architecture of the Otter USV and ROS 2.
 
-This is a required package.
+This is a **required** package.
 
 ### `otter_msgs`
 This interface (i.e., message) package is needed to use `otter_ros`. It defines custom message structures that simplify using the Otter in ROS 2.
 
-This is a required package.
+This is a **required** package.
 
 ### `otter_control`
-This package is for controllers that use `otter_ros` to control the Otter.
+This package is for external command and control of the Otter through ROS.
 
-This is an optional package.
+This is an *optional* package.
 
 ## Installation
 
@@ -100,3 +108,4 @@ Please report bugs and request features using the Issue Tracker.
 [Offroad Robotics]: https://offroad.engineering.queensu.ca/
 [Queen's University]: https://queensu.ca
 [Maritime Robotics]: https://www.maritimerobotics.com/
+[Ingenuity Labs Research Institute]: https://ingenuitylabs.queensu.ca/
