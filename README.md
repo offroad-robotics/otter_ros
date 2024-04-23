@@ -1,6 +1,6 @@
 # OtterROS
 
-Pre-print of the OtterROS paper available on arXiv: [OtterROS preprint](https://arxiv.org/abs/2404.05627).
+The OtterROS paper available on arXiv: [OtterROS preprint](https://arxiv.org/abs/2404.05627).
 
 ## Overview
 
