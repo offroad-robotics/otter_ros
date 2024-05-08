@@ -1,6 +1,6 @@
 # OtterROS
 
-Pre-print of the OtterROS paper available on arXiv: [OtterROS preprint](https://arxiv.org/abs/2404.05627).
+The OtterROS paper available on arXiv: [OtterROS preprint](https://arxiv.org/abs/2404.05627).
 
 ## Overview
 
@@ -34,7 +34,7 @@ The first release was accompanied by a paper accepted at the [Workshop on Field 
 @inproceedings{sears2024otterros,
   title     = {{OtterROS}: Picking and Programming an Uncrewed Surface Vessel for Experimental Field Robotics Research with {ROS 2}},
   author    = {Thomas M. C. Sears, M. Riley Cooper, Sabrina R. Button, and Joshua A. Marshall},
-  booktitle = {2024 {IEEE} International Conference on Robotics and Automation {(ICRA)} Workshop on Field Robotics},
+  booktitle = {{IEEE} {ICRA} Workshop on Field Robotics},
   year      = {2024}
 }
 ```
