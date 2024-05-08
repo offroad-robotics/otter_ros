@@ -1,6 +1,6 @@
 # OtterROS
 
-The OtterROS paper available on arXiv: [OtterROS preprint](https://arxiv.org/abs/2404.05627).
+The OtterROS paper is available on arXiv: [OtterROS: Picking and Programming an Uncrewed Surface Vessel for Experimental Field Robotics Research with ROS 2](https://arxiv.org/abs/2404.05627).
 
 ## Overview
 
