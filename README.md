@@ -10,7 +10,9 @@ OtterROS is a suite of ROS 2 packages for the [Maritime Robotics] Otter USV, inc
 
 The Otter ROS package has been developed and tested on [ROS 2] Foxy Fitzroy and Ubuntu 20.04 LTS.
 
-**Creators**: [Riley Cooper](15mrc5@queensu.ca), [Sabrina Button](sabrina.button@queensu.ca), [Thomas Sears](thomas.sears@queensu.ca), [Joshua Marshall](joshua.marshall@queensu.ca)
+If you have any questions, please create an issue or reach out to the team at [Offroad Robotics].
+
+**Creators**: Riley Cooper, Sabrina Button, Thomas Sears, and Joshua Marshall.
 
 **Affiliation**: [Offroad Robotics] is a member of the [Ingenuity Labs Research Institute] at [Queen's University].
 
@@ -22,7 +24,7 @@ Development of OtterROS included field tests within the traditional territories 
 
 ### Funding
 
-This project was funded in part by the NSERC Canadian Robotics Network (NCRN) under NSERC project NETGP 508451-17, the Vanier Canada Graduate Scholarships program, and Queen’s University’s USSRF program. The Otter USV was purchased with generous support from the Ingenuity Labs Research Institute’s Research Opportunity Seed Fund.
+This project was funded in part by the NSERC Canadian Robotics Network (NCRN) under NSERC project NETGP 508451-17, the Vanier Canada Graduate Scholarships program, and Queen’s University’s USSRF program. The Otter USV was purchased with generous support from the Ingenuity Labs Research Institute’s Research Equipment Fund.
 
 ### Referencing OtterROS
 
@@ -37,6 +39,7 @@ The first release was accompanied by a paper accepted at the [Workshop on Field 
 }
 ```
 
+<!-- ArXiv reference left here for posterity -->
 <!-- ```latex
 @misc{sears2024otterros,
       title={{OtterROS}: Picking and Programming an Uncrewed Surface Vessel for Experimental Field Robotics Research with {ROS} 2}, 
